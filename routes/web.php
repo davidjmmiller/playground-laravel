@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
-});
+//Route::get('/', function () {
+//    return view('layout');
+//});
+
+
+Route::get('/','UserController@index');
+Route::get('/user/forgot','UserController@forgot');
